@@ -1,0 +1,107 @@
+:root {
+    --background: #1f1f1f;
+    --textOnDark: #dcdcdc;
+    --textOnLight: #245c72;
+    --primary: #245c72;
+    --accent: #83c8d8;
+    --input: #747474;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-VariableFont_wght.ttf);
+}
+
+::-webkit-scrollbar {
+    width: .75rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: .125rem;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: .25;
+    /* Firefox */
+}
+
+::selection {
+    background-color: var(--accent);
+    color: var(--textOnLight);
+}
+
+
+* {
+    font-family: Nunito;
+    font-size: 1rem;
+    color: var(--textOnDark);
+}
+
+body {
+    background-color: var(--background);
+    margin: 0px;
+    padding: 1vw;
+
+
+
+    input {
+        border-radius: .25rem;
+        border-style: none;
+        background-color: var(--primary);
+        color: var(--textOnDark);
+        padding: .25rem;
+    }
+}
+
+#main {
+    width: 90vw;
+    height: 90vh;
+}
+
+#messages {
+    width: 100%;
+    height: calc(100% - 1.5rem);
+    overflow-y: scroll;
+    border-radius: .25rem;
+    padding-right: .25rem;
+    margin-top: .5rem;
+}
+
+.message {
+    color: var(--textOnDark);
+    padding: .25rem;
+
+    background-color: #3f4145;
+
+    .name {
+        color: var(--accent);
+        font-weight: bold;
+    }
+}
+
+.isOddtrue {
+    background-color: #494949;
+}
+
+#chat {
+    width: 100%;
+
+    margin-top: .25rem;
+
+    #messageInput {
+        width: calc(100% - 11rem);
+    }
+
+    #send {
+        background-color: var(--accent);
+        color: var(--textOnLight);
+        width: 10rem;
+    }
+
+}
